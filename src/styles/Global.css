@@ -25,6 +25,11 @@ body{
     font-family: 'Montserrat';
 }
 
+/* 
+//////////////////////////////////////
+///// Call to action button styles
+*/
+
 .callToAction-text{
     color: var(--lime-color);
     text-transform: capitalize;
