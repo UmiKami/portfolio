@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@300;400;500;600;700;800&display=swap');
 
 
 :root {
@@ -20,7 +20,19 @@ html{
 }
 
 body{
+    font-size: 1.6rem;
     background-color: var(--main-color);
     font-family: 'Montserrat';
 }
 
+.callToAction-text{
+    color: var(--lime-color);
+    text-transform: capitalize;
+}
+.callToAction-link{
+    border-bottom: 1px solid white;
+    padding-bottom: .2rem;
+}
+.callToAction-link:hover{
+    cursor: pointer;
+}
