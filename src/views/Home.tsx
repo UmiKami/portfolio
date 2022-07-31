@@ -4,7 +4,7 @@ import CallToActionText from '../components/CallToActionText';
 const Home: React.FC = () => {
   const linkText: string = "check out my work";
 
-  return <Container className="main-container">
+  return <Container className="home__main-container">
     <Row>
       <Col >
         <h1 className="home__mainHeader">
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
     </Row>
     <Row>
       <Col>
-        <CallToActionText beforeLinkText="" linkText={linkText} afterLinkText=""/>
+        <CallToActionText beforeLinkText="" linkText={linkText} afterLinkText="" link="/projects"/>
       </Col>
     </Row>
   </Container>
