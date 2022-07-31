@@ -4,6 +4,7 @@ import Projects from './views/Projects';
 import Experience from './views/Experience';
 import About from './views/About';
 import Contact from './views/Contact';
+import "./styles/Home.css"
 
 const Layout = () => {
   return <BrowserRouter>
