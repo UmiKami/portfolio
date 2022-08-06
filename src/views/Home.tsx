@@ -2,10 +2,15 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 import CallToActionText from '../components/CallToActionText';
 import useWindowDimensions from '../Hooks/WindowDimensions';
 import Navbar from '../components/Navbar';
+import { useEffect } from 'react';
 
 const Home: React.FC = () => {
   const linkText: string = "check out my work";
   const { width } = useWindowDimensions();
+
+  useEffect(()=>{
+    document.title = "Ernesto Gonzalez | Home"
+  }, [])
 
   return <>
     <Navbar />
