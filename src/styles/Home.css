@@ -1,4 +1,59 @@
-.home__main-container{
-    height: 100vh;
+.home__main-container {
+    height: 90vh;
     font-family: 'Source Code Pro';
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
 }
+
+.home__mainHeader {
+    font-size: 7rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.home__subHeader {
+    font-size: 3.2rem;
+    color: var(--secondary-darker-color);
+    text-align: center;
+}
+
+.callToAction-containerH {
+    width: 100%;
+    padding: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.img {
+    width: 28em;
+    height: auto;
+}
+
+@media only screen and (min-width: 2000px) {
+    .home__mainHeader {
+        margin-top: 40rem;
+    }
+
+    .img {
+        height: auto;
+        width: 38em;
+    }
+}
+
+/* @media only screen and (max-width: 1350px) {
+    .img {
+        height: 32rem;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .img {
+        height: 22rem;
+    }
+} */
