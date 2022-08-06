@@ -1,26 +1,34 @@
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import CallToActionText from '../components/CallToActionText';
+import useWindowDimensions from '../Hooks/WindowDimensions';
+import Navbar from '../components/Navbar';
 
 const Home: React.FC = () => {
   const linkText: string = "check out my work";
+  const { width } = useWindowDimensions();
 
-  return <Container className="home__main-container">
-    <Row>
-      <Col >
-        <h1 className="home__mainHeader">
-          {"< Hello there! I am Ernesto />"}
-        </h1>
-        <p className="home__subHeader">
-          {"std::cout << “A Full-Stack Software Developer” << endl;"}
-        </p>
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        <CallToActionText beforeLinkText="" linkText={linkText} afterLinkText="" link="/projects"/>
-      </Col>
-    </Row>
-  </Container>
+  return <>
+    <Navbar />
+    <Container className="home__main-container">
+      <Row>
+        <Col>
+          <p className="home__mainHeader">
+            {"< Hello there! I am Ernesto />"}
+          </p>
+          <p className="home__subHeader">
+            {"std::cout << “A Full-Stack Software Developer” << endl;"}
+          </p>
+        </Col>
+      </Row>
+      <Row style={{ width: "100vw" }}>
+        <Col className="callToAction-containerH">
+          {width > 991 ? <Image src={require("../assets/leftPerson.png")} fluid={true} className="img" /> : ""}
+          <CallToActionText beforeLinkText="" linkText={linkText} afterLinkText="" link="/projects" />
+          {width > 991 ? <Image src={require("../assets/rightPerson.png")} fluid={true} className="img" /> : ""}
+        </Col>
+      </Row>
+    </Container>
+  </>
 }
 
 export default Home
