@@ -6,6 +6,7 @@ import About from './views/About';
 import Contact from './views/Contact';
 import "./styles/Home.css"
 import "./styles/Navbar.css"
+import "./styles/Projects.css"
 
 const Layout = () => {
   return <BrowserRouter>
