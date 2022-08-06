@@ -6,7 +6,7 @@ REMOVE PHONE NUMBER FROM RESUME
 import { Link } from "react-router-dom"
 import useWindowDimensions from '../Hooks/WindowDimensions';
 
-const Navbar = () => {
+const Navbar:React.FC = () => {
   const {width} = useWindowDimensions()
 
   return <>
