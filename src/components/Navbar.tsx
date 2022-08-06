@@ -13,19 +13,19 @@ const Navbar = () => {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="nav  gap-4">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="\">Projects</a>
+              <Link className="nav-link active" aria-current="page" to="/projects">Projects</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="\">Experience</a>
+              <Link className="nav-link" to="/experience">Experience</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="\">About</a>
+              <Link className="nav-link" to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="\">Download Resume</a>
+              <Link className="nav-link" to="/">Download Resume</Link>
             </li>
           </ul>
         </div>
