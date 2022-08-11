@@ -1,6 +1,6 @@
 # Summary
 
-This is just a simple portfolio site with the basic information about me.
+This is just a simple portfolio site with the basic information about me. 
 
 
 # Technologies Used
@@ -14,3 +14,7 @@ This is just a simple portfolio site with the basic information about me.
 # Objective of the Project
 
 This project is meant to be an introduction to typescript and a way to share my work a "prettier" way.
+
+# Thoughts
+
+* Typescript's refactoring tools are mind blowing and definitely ease development time.
